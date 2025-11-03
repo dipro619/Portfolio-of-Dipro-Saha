@@ -177,12 +177,13 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="mailto:diprosaha3@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Name" class="contact__input" required>
-    <input type="email" name="email" placeholder="Email" class="contact__input" required>
-    <textarea name="message" placeholder="Your message" cols="0" rows="10" class="contact__input" required></textarea>
-    <input type="submit" value="Send" class="contact__button button">
-</form>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <input type="hidden" name="access_key" value="3118e93b-ebaa-4c42-9b4e-b240fdb7870c">
+                        <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Your E-mail" class="contact__input" required>
+                        <textarea name="message" id="" placeholder="Write a Message..." class="contact__input" required></textarea>
+                        <button type="submit" class="contact__button button" required>Submit</button>
+                    </form>
 
                 </div>
             </section>
@@ -207,6 +208,7 @@
         <script src="main.js"></script>
     </body>
 </html>
+
 
 
 
